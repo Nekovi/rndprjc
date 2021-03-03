@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetLover</title>
+    <link rel="icon" href="images/paw.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital@1&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+
+    />
+  </head>
+  <body>
+    <img id="puppy" src="images/puppy.jpg" alt="puppy" />
+
+    <div id="header">
+      <a href=""> PetLover</a>
+      <img id="paw" src="images/paw.png" alt="paw" />
+      
+    </div>
+
+    <div class="center">
+      <input  type="checkbox" id="show" />
+      <label for="show" class="button"> <span id="start">Start</span> </label>
+      <div class="container">
+        <label for="show" class="close-btn fas fa-times" title="close"></label>
+        <div class="text">Find Your Match</div>
+        <form action="#">
+         <label for="dog">Which race?</label>
+         <select id="dog" name="dogs" >
+             <option value="German-Shepherd">German Shepherd</option>
+             <option value="Bulldog">Bulldog</option>
+             <option value="Chihuahua">Chihuahua</option>
+             <option value="Golden-Retriever">Golden Retriever</option>
+             <option value="Kangal">Kangal</option>
+         </select>
+         <p>Should It be protective?</p>
+         <label>yes<input type="radio" name="protective" value="yes"></label>
+         <label>no<input type="radio" name="protective" value="no"></label>
+         <p>Do you want a Family dog?</p>
+         <label>yes<input type="radio" name="family-dog" value="yes"></label>
+         <label>no<input type="radio" name="family-dog" value="no"></label>
+         <p>can you dog be old?</p>
+         <label>yes<input type="radio" name="age" value="yes"></label>
+         <label>no<input type="radio" name="age" value="no"></label> <br> <br>
+         <label for="comments">additional comments</label>
+         <textarea name="comment" id="comments" cols="50" rows="10"></textarea> <br> <br>
+
+         <label for="email">Email:</label> 
+         <input type="text" name="email">
+          <br>
+         <input id="submit-btn"type="submit" value="Send">
+
+
+
+
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
